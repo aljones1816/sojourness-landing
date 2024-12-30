@@ -29,8 +29,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function TripPage({ params }: { params: { slug: string } }) {
-  const trip = trips.find((t) => t.slug === params.slug);
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
+  const trip = trips.find((t) => t.slug === slug);
 
   if (!trip) {
     return <div>Trip not found</div>;
