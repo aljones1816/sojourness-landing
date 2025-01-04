@@ -2,13 +2,10 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section
-      id="about"
-      className="py-16 bg-sjCream text-center px-6 scroll-mt-16"
-    >
-      <div className="container mx-auto">
+    <section id="about" className="py-16  text-center px-6 scroll-mt-16">
+      <div className="container mx-auto px-72">
         {/* Header */}
-        <h2 className="text-3xl md:text-4xl font-outfit text-xl mb-8">
+        <h2 className=" md:text-2xl font-serif text-l mb-8">
           Want to connect with like-minded women? Have your own group of ladies
           looking for a private shared experience? Travel with us!
         </h2>
@@ -20,12 +17,17 @@ const About: React.FC = () => {
             transformative for every woman. Our itineraries balance shared
             experience and solo vibes, so you’ll have plenty of independent time
             along with the comfort and connection of your fellow travelers.
-            There’s no better way to embrace new landscapes and vibrant cultures
-            than by lacing up your boots and stepping into adventure.
           </p>
           <p>
-            Join our community in our quest to redefine the boundaries of female
-            exploration and empowerment!
+            Staying close to our roots, we also offer bakery crawls in our
+            hometown of Portland, Maine! We feature local businesses that have
+            helped make our city’s food scene stand out as one of the best in
+            the country. If you’re traveling to the East Coast, get your group
+            of ladies together or join solo to sample and sip with us!
+          </p>
+          <p>
+            There’s no better way to embrace new landscapes and vibrant cultures
+            than by lacing up your boots and stepping into adventure.
           </p>
         </div>
 
@@ -33,21 +35,21 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
           <a
             href="#small-group-trips"
-            className="font-outfit border border-sjBrightRed text-sjBrightRed px-6 py-3  bg-sjCream hover:bg-sjBrightRed/10 transition"
+            className="font-outfit border border-sjBrightRed rounded-full text-sjBrightRed px-6 py-3 hover:bg-sjBrightRed/10 transition"
           >
             Small Group Trips
           </a>
           <a
             href="#private-groups"
-            className="font-outfit border border-sjBrightRed text-sjBrightRed px-6 py-3 bg-sjCream hover:bg-sjBrightRed/10 transition"
+            className="font-outfit border border-sjBrightRed rounded-full text-sjBrightRed px-6 py-3 hover:bg-sjBrightRed/10 transition"
           >
             Private Groups
           </a>
           <a
             href="#custom-groups"
-            className="font-outfit border border-sjBrightRed text-sjBrightRed px-6 py-3 bg-sjCream hover:bg-sjBrightRed/10 transition"
+            className="font-outfit border border-sjBrightRed rounded-full text-sjBrightRed px-6 py-3 hover:bg-sjBrightRed/10 transition"
           >
-            Custom Groups
+            Day Trips
           </a>
         </div>
       </div>

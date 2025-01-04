@@ -4,5 +4,6 @@
 
 body {
   @apply text-sjBlueBlack; /* Replace with your desired color class */
-  @apply bg-sjCream;
+  @apply bg-white;
+  @apply tracking-wide;
 }

@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
 
 const trips = [
   {
@@ -42,10 +40,7 @@ export default async function Page({
   }
 
   return (
-    <div className="bg-sjCream text-sjBlueBlack font-outfit">
-      {/* Header */}
-      <Header />
-
+    <div className=" text-sjBlueBlack font-outfit">
       {/* Hero Section */}
       <section className="relative h-[60vh]">
         <Image
@@ -129,9 +124,6 @@ export default async function Page({
           </button>
         </form>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

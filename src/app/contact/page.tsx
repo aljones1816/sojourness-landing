@@ -1,12 +1,6 @@
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
-
 export default function ContactPage() {
   return (
-    <div className="bg-sjCream text-sjBlueBlack font-outfit min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
-
+    <div className="text-sjBlueBlack font-outfit min-h-screen flex flex-col">
       {/* Main Content */}
       <main className="flex-grow flex items-center justify-center">
         <div className="w-full max-w-lg bg-white p-8 rounded-md shadow-lg">
@@ -64,9 +58,6 @@ export default function ContactPage() {
           </form>
         </div>
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

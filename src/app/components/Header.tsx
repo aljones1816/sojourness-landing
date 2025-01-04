@@ -8,14 +8,14 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-sjCream shadow z-50">
+    <header className="fixed top-0 w-full bg-white shadow z-50">
       {/* Pink Line */}
       <div className="bg-sjLightRed h-3"></div>
 
       {/* Navigation Bar */}
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className=" mx-auto px-6 py-4 flex items-center justify-center ">
         {/* Left Menu (Large Screens Only) */}
-        <nav className="hidden md:flex space-x-6 flex-1">
+        <nav className="hidden md:flex space-x-20 flex-1 justify-center ">
           <Link
             href="/"
             className="font-outfit font-thin hover:text-sjBrightBlue"
@@ -23,13 +23,13 @@ const Header: React.FC = () => {
             HOME
           </Link>
           <Link
-            href="#about"
+            href="/about"
             className="font-outfit font-thin hover:text-sjBrightBlue"
           >
             ABOUT
           </Link>
           <Link
-            href="#trips"
+            href="/trips"
             className="font-outfit font-thin hover:text-sjBrightBlue"
           >
             TRIPS
@@ -38,19 +38,26 @@ const Header: React.FC = () => {
 
         {/* Logo */}
         <div className="flex-shrink-0 mx-auto">
-          <Link href="/" passHref>
+          <Link className="flex items-center" href="/" passHref>
             <Image
-              src="/sojourness-logo-red-RGB.png"
-              alt="Sojourness Logo"
-              width={400}
-              height={40}
+              src="/sojourness-icon-fullcolor-RGB.png"
+              alt="Sojourness Monogram"
+              width={60}
+              height={60}
+              priority
+            />
+            <Image
+              src="/sojourness-logotype-red-RGB.png"
+              alt="Sojourness Name"
+              width={200}
+              height={35}
               priority
             />
           </Link>
         </div>
 
         {/* Right Menu (Large Screens Only) */}
-        <nav className="hidden md:flex space-x-6 flex-1 justify-end">
+        <nav className="hidden md:flex space-x-20 flex-1 justify-center ">
           <Link
             href="#resources"
             className="font-outfit font-thin hover:text-sjBrightBlue"
@@ -96,7 +103,7 @@ const Header: React.FC = () => {
 
       {/* Dropdown Menu (Small Screens Only) */}
       {menuOpen && (
-        <div className="md:hidden bg-sjCream shadow-lg">
+        <div className="md:hidden bg-white shadow-lg">
           <nav className="flex flex-col items-center space-y-4 py-4">
             <Link
               href="/"

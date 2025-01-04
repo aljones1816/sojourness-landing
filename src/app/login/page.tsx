@@ -1,15 +1,9 @@
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
-
 export default function LoginPage() {
   return (
-    <div className="bg-sjCream text-sjBlueBlack font-outfit min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
-
+    <div className="text-sjBlueBlack font-outfit min-h-screen flex flex-col">
       {/* Main Content */}
       <main className="flex-grow flex items-center justify-center">
-        <div className="w-full max-w-md bg-white p-8 rounded-md shadow-lg">
+        <div className="w-full max-w-md p-8 rounded-md shadow-lg">
           <h1 className="text-2xl font-serif text-center mb-6">Login</h1>
           <form className="space-y-6">
             {/* Email Field */}
@@ -69,9 +63,6 @@ export default function LoginPage() {
           </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

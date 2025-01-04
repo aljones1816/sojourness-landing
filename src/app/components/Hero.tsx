@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
   }, [images.length]);
 
   return (
-    <section className="relative h-[500px] md:h-[700px] overflow-hidden">
+    <section className="relative h-[500px] md:h-[700px] overflow-hidden mt-16">
       {/* Background Photos */}
       {images.map((image, index) => (
         <div

@@ -1,6 +1,8 @@
 import { Young_Serif, Outfit, Andika } from "next/font/google";
 import "./globals.css";
 import Metadata from "next/head";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 // Configure the fonts
 const youngSerif = Young_Serif({
@@ -37,7 +39,9 @@ export default function RootLayout({
       <body
         className={`${youngSerif.variable} ${outfit.variable} ${andika.variable}`}
       >
-        {children}
+        <Header />
+        <main className="min-h-[calc(100vh-200px)]">{children}</main>
+        <Footer />
       </body>
     </html>
   );

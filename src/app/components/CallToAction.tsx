@@ -22,7 +22,7 @@ const trips = [
 
 const CallToAction: React.FC = () => {
   return (
-    <section className="py-1 bg-sjCream">
+    <section className="py-1 bg-white">
       <div className="w-full ">
         {trips.map((trip, index) => {
           // Determine colors based on index (alternating colors)
@@ -43,19 +43,19 @@ const CallToAction: React.FC = () => {
                 className={`w-full md:w-2/3 ${textBgColor} ${textTextColor} p-6 flex flex-col justify-center items-center`}
               >
                 <div>
-                  <h2 className="font-outfit text-xl flex justify-center">
+                  <h2 className="font-outfit text-xl flex justify-center tracking-widest">
                     {trip.date}
                   </h2>
-                  <h3 className="flex justify-center font-serif text-4xl mt-2">
+                  <h3 className="flex justify-center font-serif text-4xl mt-2 tracking-wider">
                     {trip.title}
                   </h3>
-                  <p className="flex font-outfit justify-center mt-4">
+                  <p className="flex font-outfit justify-center mt-4 tracking-widest">
                     {trip.description}
                   </p>
                 </div>
                 <a
                   href={trip.link}
-                  className={`${buttonBgColor} ${textTextColor} font-outfit text-xl px-4 py-1 mt-8 self-center shadow hover:opacity-90 transition`}
+                  className={`${buttonBgColor} ${textTextColor} font-outfit text-l px-8 py-2 tracking-wide mt-8 self-center shadow hover:opacity-90 transition`}
                 >
                   LET&apos;S GO
                 </a>
